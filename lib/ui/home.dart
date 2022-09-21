@@ -5,8 +5,17 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Mehedi Hasan',
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.transparent,
+        centerTitle: false,
+        elevation: 0,
+      ),
+      body: const Center(
         child: Text('My Portfolio App'),
       ),
     );
