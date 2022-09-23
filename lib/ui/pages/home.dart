@@ -7,6 +7,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text(
           'Mehedi Hasan',
@@ -22,6 +23,7 @@ class Home extends StatelessWidget {
             Header(),
             SizedBox(height: 24.0),
             Badges(),
+            SizedBox(height: 32.0),
             Projects(),
             Footer(),
           ],
