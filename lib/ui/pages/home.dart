@@ -19,13 +19,20 @@ class Home extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: const [
-            Header(),
-            SizedBox(height: 24.0),
-            Badges(),
-            SizedBox(height: 32.0),
-            Projects(),
-            Footer(),
+          children: [
+            Container(
+              constraints: const BoxConstraints(maxWidth: 800),
+              child: Column(
+                children: const [
+                  Header(),
+                  SizedBox(height: 24.0),
+                  Badges(),
+                ],
+              ),
+            ),
+            const SizedBox(height: 32.0),
+            const Projects(),
+            const Footer(),
           ],
         ),
       ),
