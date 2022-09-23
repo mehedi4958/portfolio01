@@ -20,6 +20,7 @@ class Home extends StatelessWidget {
         child: Column(
           children: const [
             Header(),
+            SizedBox(height: 24.0),
             Badges(),
             Projects(),
             Footer(),
