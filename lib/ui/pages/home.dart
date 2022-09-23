@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio01/ui/components/components.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -15,9 +16,20 @@ class Home extends StatelessWidget {
         centerTitle: false,
         elevation: 0,
       ),
-      body: const Center(
-        child: Text('My Portfolio App'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            Header(),
+            Badges(),
+            Projects(),
+            Footer(),
+          ],
+        ),
       ),
     );
   }
+
+  // Widget _header() {
+  //   return const SizedBox.shrink();
+  // }
 }

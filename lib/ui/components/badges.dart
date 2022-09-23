@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
-Widget _badges() {
-  return const SizedBox.shrink();
+class Badges extends StatelessWidget {
+  const Badges({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const SizedBox.shrink();
+  }
 }
