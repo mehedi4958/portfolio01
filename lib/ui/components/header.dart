@@ -70,6 +70,26 @@ class Header extends StatelessWidget {
                   color: kBlueColor,
                 ),
               ),
+              IconButton(
+                onPressed: () async {
+                  const url = 'https://github.com/mehedi4958/';
+                  urlLauncher.urlLaunch(url);
+                },
+                icon: const FaIcon(
+                  FontAwesomeIcons.github,
+                  color: kBlackColor,
+                ),
+              ),
+              IconButton(
+                onPressed: () async {
+                  const url = 'https://twitter.com/mehedi4958/';
+                  urlLauncher.urlLaunch(url);
+                },
+                icon: const FaIcon(
+                  FontAwesomeIcons.twitter,
+                  color: kBlueColor,
+                ),
+              ),
             ],
           ),
         ],
